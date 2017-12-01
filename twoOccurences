@@ -1,0 +1,28 @@
+public class Part3 {
+
+    public String  twoOccurrences (String a,String b){
+    String result ="";
+    int counter = 0;
+    for(int i=0; i<=(b.length()-1);){
+      if (b.indexOf((a),i)>0){
+        counter++;
+        if (counter >= 2) {
+            return result = "true";
+        }
+       }
+      else{
+           return result = "false";
+         }
+   }
+   return result;
+  }
+  
+  public void testtwoOccurrences(){  
+    String a ="a";
+    String b ="banana";
+    String result = twoOccurrences (a,b);
+    System.out.println("result is " + result);   
+  }
+
+}
+
